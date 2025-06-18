@@ -1,0 +1,247 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+div,
+h1,
+h2,
+p,
+span {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background: #f5f5f5;
+    color: #323232;
+    font-family: Geologica, sans-serif
+}
+
+body.lock {
+    overflow: hidden
+}
+
+img {
+    display: block
+}
+
+a,
+button,
+input,
+textarea {
+    display: block;
+    font-family: Geologica, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: #323232
+}
+
+button,
+input,
+textarea {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: 0;
+    font-family: Geologica, sans-serif
+}
+
+button {
+    cursor: pointer
+}
+
+ol,
+ul {
+    list-style-type: none
+}
+
+::-webkit-scrollbar {
+    width: 7px
+}
+
+::-webkit-scrollbar-track {
+    background: #cbcbcb
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(120, 128, 129, .847)
+}
+
+textarea {
+    resize: none
+}
+
+main {
+    margin-top: 100px
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 475px) {
+    main {
+        margin-top: 65px;
+    }
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+h1 {
+    color: #0056a2;
+    text-shadow: 2px 2px 4px rgba(2, 42, 78, .2);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%
+}
+
+@media (max-width: 1023px) {
+    h1 {
+        font-size: 36px
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px
+    }
+}
+
+h2 {
+    color: #323232;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 140%
+}
+
+h2.heading {
+    font-size: 28px;
+}
+
+@media (max-width: 1023px) {
+    h2 {
+        font-size: 18px
+    }
+
+    h2.heading {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 475px) {
+    h2 {
+        font-size: 14px
+    }
+
+    h2.heading {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    h2.heading span {
+        display: block;
+    }
+}
+
+h3 {
+    color: #323232;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 167.187%
+}
+
+@media (max-width: 475px) {
+    h3 {
+        font-size: 14px
+    }
+}
+
+@media (max-width: 1023px) {
+    h3.heading {
+        margin-bottom: 40px
+    }
+}
+
+@media (max-width: 475px) {
+    h3.heading {
+        margin-bottom: 20px
+    }
+}
+
+.btn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 167.187%;
+    border-radius: 0;
+    padding: 11px 31px;
+    background: #0056a2;
+    transition: all .5s
+}
+
+.btn:hover {
+    background: #0056a2;
+    color: #fff;
+}
+
+.up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 51px;
+    border: 1px solid #0056a2;
+    background: #fff;
+    z-index: 8;
+    transition: all .5s;
+    cursor: pointer
+}
+
+.up path {
+    transition: all .5s
+}
+
+.up:hover {
+    background: #0056a2
+}
+
+.up:hover path {
+    stroke: #fff
+}
+
+@media (max-width: 768px) {
+    .up {
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px
+    }
+}
