@@ -16,7 +16,7 @@ span {
 }
 
 body {
-    background: #f5f5f5;
+    background: #f4f7fe;
     color: #323232;
     font-family: Geologica, sans-serif
 }
@@ -112,7 +112,7 @@ main {
 }
 
 h1 {
-    color: #0056a2;
+    color: #0A2463;
     text-shadow: 2px 2px 4px rgba(2, 42, 78, .2);
     font-size: 48px;
     font-weight: 400;
@@ -199,12 +199,12 @@ h3 {
     line-height: 167.187%;
     border-radius: 0;
     padding: 11px 31px;
-    background: #0056a2;
+    background: #F1412C;
     transition: all .5s
 }
 
 .btn:hover {
-    background: #0056a2;
+    background: #F1412C;
     color: #fff;
 }
 
@@ -218,7 +218,7 @@ h3 {
     align-items: center;
     justify-content: center;
     border-radius: 51px;
-    border: 1px solid #0056a2;
+    border: 1px solid #F1412C;
     background: #fff;
     z-index: 8;
     transition: all .5s;
@@ -230,7 +230,7 @@ h3 {
 }
 
 .up:hover {
-    background: #0056a2
+    background: #F1412C
 }
 
 .up:hover path {

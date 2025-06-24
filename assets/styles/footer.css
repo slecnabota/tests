@@ -4,7 +4,7 @@
 }
 
 .footer h3 {
-    color: #0056a2;
+    color: #000;
 }
 
 .footer a:hover {
@@ -16,7 +16,7 @@
 }
 
 .footer__text {
-    color: #0056a2;
+    color: #000;
     font-size: 18px;
     font-weight: 300;
     line-height: 167.187%
@@ -26,7 +26,7 @@
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    background: #c6e4ff;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,12 +34,12 @@
 }
 
 .footer__media a:hover {
-    background: #0056a2
+    background: #0A2463
 }
 
 .footer__media a:hover svg path {
-    stroke: #f5f5f5;
-    fill: #f5f5f5
+    stroke: #fff;
+    fill: #fff
 }
 
 .footer__media a svg {
@@ -52,7 +52,7 @@
 
 .footer__btn {
     width: 100%;
-    color: #0056a2;
+    color: #0A2463;
     font-size: 18px;
     font-weight: 400;
     line-height: 167.187%;
@@ -62,7 +62,7 @@
 
 .footer__btn:hover {
     background: #ffffff;
-    color: #0056a2;
+    color: #0A2463;
 }
 
 @media (max-width: 1200px) {
