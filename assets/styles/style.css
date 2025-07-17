@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700&family=Roboto&display=swap);
 @import 'clear.css';
 @import 'header.css';
 @import 'footer.css';
@@ -38,7 +38,7 @@
 
 .hero button {
     width: fit-content;
-    padding: 12px 50px;
+    padding: 15px 50px;
 }
 
 .hero__wrapper {
@@ -53,14 +53,14 @@
 
 .work__wrapper {
     display: grid;
-    grid-template-columns: 58% 40%;
+    grid-template-columns: 50% 45%;
     align-items: center;
     justify-content: space-between;
 }
 
 .work-img {
     margin-left: auto;
-    max-width: 400px;
+    /*max-width: 500px;*/
     width: 100%;
 }
 
@@ -68,6 +68,11 @@
     width: 100%;
     border-radius: 20px;
     margin-left: auto;
+}
+
+.work__wrapper h2 {
+    font-size: 22px;
+    font-weight: 200;
 }
 
 .advantages__inner {
@@ -97,7 +102,7 @@
 .advantages__item p {
     color: #131319;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .advantages h2 {
@@ -113,6 +118,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     transform: translateY(50%);
 }
 
@@ -126,6 +132,10 @@
 
 .info__content p {
     font-weight: 300;
+}
+
+.info__wrapper img {
+    filter: blur(1px)
 }
 
 .service h1 {
@@ -157,17 +167,16 @@
     font-size: 20px;
     line-height: 18px;
     font-weight: 500;
-    margin-bottom: 10px !important;
 }
 
 .service__item span {
-    font-weight: 300;
-    font-size: 13px;
+    font-weight: 100;
+    font-size: 12px;
 }
 
 .service__item p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .contact-us__wrapper {
@@ -246,6 +255,10 @@
     .contact-us__methods {
         flex-direction: column;
     }
+
+    .work h2 {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -261,13 +274,17 @@
         padding-top: 80px;
     }
 
+    .work.section {
+        padding-top: 60px;
+    }
+
     .hero {
         height: 400px;
     }
 
     .hero::before {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 30%, transparent 70%, rgba(0, 0, 0, 0.6)),
-        url(../img/hero_mob.webp) center center / cover no-repeat;
+        url(../img/hero.webp) center center / cover no-repeat;
     }
 
     .service__inner h3 {
@@ -302,6 +319,10 @@
         transform: none;
     }
 
+    .info__wrapper img {
+        filter: none;
+    }
+
     .info__wrapper {
         display: flex;
         flex-direction: column;
@@ -323,10 +344,7 @@
     }
 
     .work-img {
-        max-width: 300px;
-    }
-
-    .work-img {
+        max-width: 500px;
         margin-left: 0;
     }
 
@@ -342,15 +360,24 @@
 }
 
 @media (max-width: 475px) {
+    .hero button {
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .work-img {
+        max-width: none;
+    }
+
     .advantages__inner {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .info span{
+    .info span {
         display: inline;
     }
 
-    .info br{
+    .info br {
         display: none;
     }
 
@@ -358,8 +385,9 @@
         text-align: left;
     }
 
-    .advantages h2.heading span {
-        display: block;
+    .service h2.heading span, .advantages h2.heading span {
+        white-space: nowrap;
+        display: inline;
     }
 
     .service__inner h3 {
@@ -369,6 +397,10 @@
     .contact-us__methods {
         flex-direction: column;
         width: 100%;
+    }
+
+    .hero h2 span {
+        white-space: nowrap;
     }
 }
 

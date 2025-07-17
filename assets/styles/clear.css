@@ -154,7 +154,7 @@ h2.heading {
 
 @media (max-width: 475px) {
     h2 {
-        font-size: 14px
+        font-size: 16px
     }
 
     h2.heading {
@@ -197,10 +197,11 @@ h3 {
     font-size: 16px;
     font-weight: 300;
     line-height: 167.187%;
-    border-radius: 0;
+    /*border-radius: 0;*/
     padding: 11px 31px;
     background: #0A2463;
-    transition: all .5s
+    transition: all .5s;
+    border-radius: 10px;
 }
 
 .btn:hover {

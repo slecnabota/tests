@@ -16,7 +16,7 @@
 .header__logo a {
     position: relative;
     z-index: 1000;
-    width: 185px;
+    width: 175px;
 }
 
 .header__wrapper {
@@ -122,7 +122,7 @@
     }
 
     .header__logo a{
-        width: 150px;
+        width: 140px;
     }
 
     .header__contact {
@@ -151,6 +151,11 @@
     .header__nav {
         display: none !important;
     }
+
+    .header__content-media a {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media (max-width: 475px) {
@@ -161,8 +166,10 @@
     .header__info a {
         font-size: 14px;
     }
+}
 
+@media (max-width: 375px) {
     .header__logo a{
-        width: 120px;
+        width: 115px;
     }
 }
