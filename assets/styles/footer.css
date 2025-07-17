@@ -1,4 +1,5 @@
 .footer {
+    margin-top: 100px;
     padding: 20px 0 40px;
     box-shadow: 0 8px 32px rgba(43, 45, 51, 0.08), 0 0 2px rgba(0, 0, 0, 0.08), 0 0 24px rgba(43, 45, 51, 0.12);
 }
@@ -71,7 +72,13 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
+    .footer {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 850px) {
     .footer__wrapper {
         align-items: flex-start !important;
         flex-direction: column;

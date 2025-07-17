@@ -80,7 +80,7 @@ main {
     margin-top: 100px
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     main {
         margin-top: 75px;
     }
@@ -125,7 +125,7 @@ h1 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     h1 {
         font-size: 28px
     }
@@ -194,17 +194,17 @@ h3 {
 
 .btn {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 167.187%;
     border-radius: 0;
     padding: 11px 31px;
-    background: #F1412C;
+    background: #0A2463;
     transition: all .5s
 }
 
 .btn:hover {
-    background: #F1412C;
+    background: #0A2463;
     color: #fff;
 }
 
@@ -218,7 +218,7 @@ h3 {
     align-items: center;
     justify-content: center;
     border-radius: 51px;
-    border: 1px solid #F1412C;
+    border: 1px solid #0A2463;
     background: #fff;
     z-index: 8;
     transition: all .5s;
@@ -230,14 +230,14 @@ h3 {
 }
 
 .up:hover {
-    background: #F1412C
+    background: #0A2463
 }
 
 .up:hover path {
     stroke: #fff
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .up {
         right: 20px;
         bottom: 20px;

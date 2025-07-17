@@ -23,13 +23,19 @@
 <header class="header" id="header">
     <div class="container">
         <div class="d-flex align-items-center justify-content-between">
-            <div class="col-sm-2 col-lg-3 col-xl-3">
-                <a href="index.html" class="header__logo">
-                    <img src="./assets/img/logo_orange.svg" alt="header logo" class="header__logo">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="./assets/img/logo.jpg" class="w-100" alt="header logo">
                 </a>
             </div>
+            <div class="header__nav d-flex align-items-center gap-5">
+                <a href="#work">О нас</a>
+                <a href="#service">Наши услуги</a>
+                <a href="#advantages">Почему мы</a>
+                <a href="#contact">Контакты</a>
+            </div>
             <div class="d-flex align-items-center gap-3 header__wrapper">
-                <div class="d-flex align-items-center gap-3">
+                <div class="header__contact d-flex align-items-center gap-3">
                     <div class="d-flex align-items-center gap-3 header__media">
                         <a href="https://wa.me/77077710888" target="_blank">
                             <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
@@ -65,21 +71,28 @@
                         </a>
                     </div>
                 </div>
-                <div class="menu" id="menu" onclick="openMenu()">
-                    <img src="./assets/img/burger.svg" alt="">
+                <div class="menu" id="openHeaderBtn">
+                    <img src="./assets/img/burger.svg" alt="burger" loading="lazy">
                 </div>
                 <div class="header__menu">
-                    <div class="header__close" onclick="closeMenu()">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.5 7.5L7.5 22.5" stroke="black" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7.5 7.5L22.5 22.5" stroke="black" stroke-width="2"
-                                  stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-
+                    <div class="header__menu-top">
+                        <div class="header__close" id="closeHeaderBtn">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 5 L25 25" stroke="black" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25 5 L5 25" stroke="black" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                     </div>
                     <div class="d-flex flex-column gap-3 header__content">
+                        <div class="header__menu-nav d-flex flex-column gap-3">
+                            <a href="#work">О нас</a>
+                            <a href="#service">Наши услуги</a>
+                            <a href="#advantages">Почему мы</a>
+                            <a href="#contact">Контакты</a>
+                        </div>
                         <div class="header__content-media d-flex align-items-center gap-3">
                             <a href="https://wa.me/77077710888" target="_blank">
                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
@@ -114,7 +127,7 @@
     </div>
 </header>
 <main class="main">
-    <section class="section hero" id="hero">
+    <section class="hero" id="hero">
         <div class="container">
             <div class="hero__wrapper">
                 <h1 class="wow animate__animated animate__fadeInDown">
@@ -141,7 +154,7 @@
                     управленческие риски.
                 </h2>
                 <div class="work-img">
-                    <img src="assets/img/about.png" alt="work_img">
+                    <img src="assets/img/about.webp" alt="work_img" loading="lazy">
                 </div>
             </div>
         </div>
@@ -149,22 +162,22 @@
     <section class="section advantages" id="advantages">
         <div class="container">
             <div class="advantages__wrapper d-flex flex-column gap-4">
-                <h2 class="heading">
+                <h2 class="heading wow animate__animated animate__fadeInDown">
                     Почему выгодно <span>работать с нами</span>
                 </h2>
                 <div class="advantages__inner">
                     <div class="advantages__item">
-                        <img src="assets/img/adv1.svg" alt="">
+                        <img src="assets/img/adv1.svg" alt="advg1" loading="lazy">
                         <h3>Снижение затрат на 25–40%</h3>
                         <p>За счёт сокращения расходов на налоги, подбор, обучение и компенсационные выплаты.</p>
                     </div>
                     <div class="advantages__item">
-                        <img src="assets/img/advg3.svg" alt="">
+                        <img src="assets/img/advg3.svg" alt="advg2" loading="lazy">
                         <h3>Быстрая замена персонала</h3>
                         <p>Компания оперативно меняет сотрудников без ущерба для сроков проекта (до 3 дней)</p>
                     </div>
                     <div class="advantages__item">
-                        <img src="assets/img/advg2.svg" alt="">
+                        <img src="assets/img/advg2.svg" alt="advg3" loading="lazy">
                         <h3>Снижение текучки на 30–50%</h3>
                         <p>Благодаря контролю качества работников и постоянному кадровому резерву.</p>
                     </div>
@@ -172,11 +185,85 @@
             </div>
         </div>
     </section>
-    <section class="section contact-us">
+    <section class="section info" id="info">
+        <div class="container">
+            <div class="info__wrapper">
+                <div class="info__content d-flex flex-column gap-3">
+                    <h2 class="heading wow animate__animated animate__fadeInDown">
+                        Предоставляем исполнителей<br> по всей территории Казахстана
+                    </h2>
+                    <p>
+                        Крупнейшая сеть партнёров в сфере аутсорсинга.
+                        <span>
+                            Мы работаем во всех 20 областях и крупных городах страны
+                            <br> — от Алматы до Астаны, от Шымкента до Уральска.
+                        </span>
+                    </p>
+                    <a href="https://wa.me/77077710888" target="_blank">
+                        <button class="btn">
+                            Узнать подробнее
+                        </button>
+                    </a>
+                </div>
+                <img src="assets/img/map.svg" class="w-100" alt="map" loading="lazy"/>
+            </div>
+        </div>
+    </section>
+    <section class="section service" id="service">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center gap-4">
+                <h2 class="heading wow animate__animated animate__fadeInDown">Услуги рабочих
+                    <span>по выгодным ценам</span></h2>
+                <div class="service__inner">
+                    <div class="service__item wow animate__animated animate__fadeInRight">
+                        <div class="d-flex align-items-center gap-3">
+                            <h1 class="wow animate__animated animate__fadeInLeft">1</h1>
+                            <div>
+                                <span>от 1560 тенге за час</span>
+                                <h3 class="m-0">Разнорабочие </h3>
+                            </div>
+                        </div>
+                        <p>
+                            Опытные и ответственные рабочие для любых задач: погрузка, уборка, помощь на стройке и
+                            складе. Быстрый выезд и гибкий график.
+                        </p>
+                    </div>
+                    <div class="service__item wow animate__animated animate__fadeInRight">
+                        <div class="d-flex align-items-center gap-3">
+                            <h1 class="wow animate__animated animate__fadeInLeft">2</h1>
+                            <div>
+                                <span>от 2230 тенге за час</span>
+                                <h3 class="m-0">Сварщики</h3>
+                            </div>
+                        </div>
+                        <p>
+                            Профессиональные сварщики с допусками. Выполняем сварочные работы любой сложности — от
+                            мелкого ремонта до крупных конструкций.
+                        </p>
+                    </div>
+                    <div class="service__item wow animate__animated animate__fadeInRight">
+                        <div class="d-flex align-items-center gap-3">
+                            <h1 class="wow animate__animated animate__fadeInLeft">3</h1>
+                            <div>
+                                <span>от 1780 тенге за час</span>
+                                <h3 class="m-0">Стропальщики</h3>
+                            </div>
+                        </div>
+                        <p>
+                            Обеспечим безопасную погрузку и разгрузку грузов любой категории. Наши специалисты имеют
+                            все необходимые допуски и опыт работы с техникой.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section contact-us" id="contact">
         <div class="container">
             <div class="contact-us__wrapper d-flex flex-column gap-2">
                 <div class="contact-us__inner">
-                    <h3 class="contact-us__title">Гибкие исполнители под любые задачи бизнеса без затрат на
+                    <h3 class="contact-us__title wow animate__animated animate__fadeInDown">
+                        Гибкие исполнители под любые задачи бизнеса без затрат на
                         трудоустройство и обучение</h3>
                     <div class="contact-us__methods d-flex justify-content-center gap-4">
                         <a href="tel:+77077710888" class="contact-us__link">
@@ -196,42 +283,11 @@
             </div>
         </div>
     </section>
-    <section class="section service" id="service">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center gap-4">
-                <h2 class="heading wow animate__animated animate__fadeInDown">Услуги рабочих
-                    <span>по выгодным ценам</span></h2>
-                <div class="service__inner">
-                    <div class="service__item">
-                        <h1 class="wow animate__animated animate__fadeInLeft">1</h1>
-                        <div class="service__content wow animate__animated animate__fadeInRight">
-                            <h3 class="m-0">Разнорабочие </h3>
-                            <p>от 1560 тенге за час</p>
-                        </div>
-                    </div>
-                    <div class="service__item">
-                        <h1 class="wow animate__animated animate__fadeInLeft">2</h1>
-                        <div class="service__content wow animate__animated animate__fadeInRight">
-                            <h3 class="m-0">Сварщики</h3>
-                            <p>от 2230 тенге за час</p>
-                        </div>
-                    </div>
-                    <div class="service__item">
-                        <h1 class="wow animate__animated animate__fadeInLeft">3</h1>
-                        <div class="service__content wow animate__animated animate__fadeInRight">
-                            <h3 class="m-0">Стропальщики</h3>
-                            <p>от 1780 тенге за час</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="up" onclick="scrollToTop()">
+    <div class="up" id="btnUp">
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 20.5103L12 4.51025" stroke="#F1412C" stroke-width="2" stroke-linecap="round"
+            <path d="M12 20.5103L12 4.51025" stroke="#0A2463" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round"/>
-            <path d="M6 10.5103L12 4.51025L18 10.5103" stroke="#F1412C" stroke-width="2" stroke-linecap="round"
+            <path d="M6 10.5103L12 4.51025L18 10.5103" stroke="#0A2463" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round"/>
         </svg>
     </div>
@@ -241,7 +297,7 @@
         <div class="footer__wrapper d-flex justify-content-between">
             <div class="footer__inner d-flex flex-column gap-2">
                 <div class="footer__logo">
-                    <img class="w-100" src="./assets/img/logo.jpg" alt="">
+                    <img class="w-100" src="./assets/img/logo.jpg" alt="logo" loading="lazy">
                 </div>
                 <a href="https://wa.me/77077710888" target="_blank">
                     <button class="btn footer__btn">

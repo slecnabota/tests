@@ -4,7 +4,7 @@
 @import 'footer.css';
 
 .section {
-    margin-bottom: 100px;
+    padding-top: 100px;
 }
 
 .hero {
@@ -17,7 +17,7 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 30%, transparent 70%, rgba(0, 0, 0, 0.6)),
-    url(../img/hero.png) center center / cover no-repeat;
+    url(../img/hero.webp) center center / cover no-repeat;
     z-index: 1;
 }
 
@@ -53,14 +53,21 @@
 
 .work__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 58% 40%;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+}
+
+.work-img {
+    margin-left: auto;
+    max-width: 400px;
+    width: 100%;
 }
 
 .work-img img {
     width: 100%;
     border-radius: 20px;
+    margin-left: auto;
 }
 
 .advantages__inner {
@@ -98,19 +105,39 @@
     text-align: center;
 }
 
+.info__wrapper {
+    position: relative;
+}
+
+.info__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50%);
+}
+
+.info__content span {
+    display: block;
+}
+
+.info__content a {
+    width: fit-content;
+}
+
+.info__content p {
+    font-weight: 300;
+}
+
 .service h1 {
     min-width: 30px;
     text-align: center;
 }
 
-.service p {
-    font-size: 14px;
-}
-
 .service__inner {
     width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: stretch;
     gap: 20px;
 }
 
@@ -120,15 +147,27 @@
     background: #fff;
     padding: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+    flex-direction: column;
+    column-gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 8px 24px;
     border-radius: 24px;
 }
 
-.contact-us {
+.service__item h3 {
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 10px !important;
+}
+
+.service__item span {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.service__item p {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .contact-us__wrapper {
@@ -207,17 +246,9 @@
     .contact-us__methods {
         flex-direction: column;
     }
-
-    .contact-us {
-        padding: 50px 0;
-    }
 }
 
 @media (max-width: 1023px) {
-    .contact-us {
-        margin: 0 !important;
-    }
-
     .contact-us__inner {
         width: 100%;
     }
@@ -227,7 +258,7 @@
     }
 
     .section {
-        margin-bottom: 70px;
+        padding-top: 80px;
     }
 
     .hero {
@@ -236,20 +267,16 @@
 
     .hero::before {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 30%, transparent 70%, rgba(0, 0, 0, 0.6)),
-        url(../img/hero_mob.png) center center / cover no-repeat;
+        url(../img/hero_mob.webp) center center / cover no-repeat;
     }
 
     .service__inner h3 {
         margin-bottom: 20px;
         margin-top: 10px
     }
-
-    .contact-us {
-        padding: 50px 0;
-    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .contact-us__wrapper::after {
         width: 100%;
     }
@@ -262,12 +289,27 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .service h1 {
+        font-size: 36px;
+    }
+
     .advantages__item {
         border-radius: 20px;
     }
 
-    .section {
-        margin-bottom: 50px;
+    .info__content {
+        position: static;
+        transform: none;
+    }
+
+    .info__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service__inner {
+        flex-direction: column;
     }
 
     .service__item {
@@ -275,7 +317,17 @@
     }
 
     .work__wrapper {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .work-img {
+        max-width: 300px;
+    }
+
+    .work-img {
+        margin-left: 0;
     }
 
     .contact-us__wrapper {
@@ -294,12 +346,24 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .info span{
+        display: inline;
+    }
+
+    .info br{
+        display: none;
+    }
+
+    .info h2 {
+        text-align: left;
+    }
+
     .advantages h2.heading span {
         display: block;
     }
 
     .service__inner h3 {
-        font-size: 14px
+        font-size: 18px
     }
 
     .contact-us__methods {
