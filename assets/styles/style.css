@@ -134,10 +134,6 @@
     font-weight: 300;
 }
 
-.info__wrapper img {
-    filter: blur(1px)
-}
-
 .service h1 {
     min-width: 30px;
     text-align: center;
@@ -317,10 +313,6 @@
     .info__content {
         position: static;
         transform: none;
-    }
-
-    .info__wrapper img {
-        filter: none;
     }
 
     .info__wrapper {
